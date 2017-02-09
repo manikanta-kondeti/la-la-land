@@ -1418,9 +1418,6 @@ void initRendering()
 
 	glEnable(GL_DEPTH_TEST);        // Enable objects to be drawn ahead/behind one another
 	glEnable(GL_COLOR_MATERIAL); 
-	Image* imagesky = loadBMP("./bmp/sky.bmp");
-	_textureIdsky = loadTexture(imagesky);
-	delete imagesky;
 	Image* image = loadBMP("./bmp/vtr.bmp");
 	_textureId = loadTexture(image);
 	delete image;
