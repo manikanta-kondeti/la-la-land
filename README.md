@@ -13,12 +13,21 @@ This repository has source code written in C++. It contains a game developed usi
 
 ###Requirements :
 
+Linux: 
 Make sure glut libraries are installed or 
 * sudo apt-get install freeglut3 freeglut3-dev
 
 ###Commands :
 + make 
 + ./output 
+
+Mac(change the versions in the g++ command accordingly): 
+brew install freeglut
+brew install --cask xquartz
+open -a XQuartz
+ export DISPLAY=:0.0
+g++ -Wall -o output Main.cpp imageloader.cpp -I/opt/homebrew/Cellar/freeglut/3.4.0/include -L/opt/homebrew/Cellar/freeglut/3.4.0/lib/ -lglut -framework OpenGL 
+./output
 
 
 ## Instructions:
